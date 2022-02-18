@@ -154,3 +154,53 @@
 
 //    return uspjesno;
 // }
+
+
+
+// #include <stdio.h>
+// #include <stdlib.h>
+
+// struct tocka_s
+// {
+//    int x;
+//    int y;
+// };
+
+// void put(int seed, int koraka, struct tocka_s *tocke)
+// {
+//    int i, pomakX, pomakY;
+//    tocke[0].x = 0;
+//    tocke[0].y = 0;
+
+//    for (i = 1; i < koraka; i++)
+//    {
+//       srand((unsigned int)seed);
+//       pomakX = rand() % (10 - 0 + 1) + 0;
+//       *(tocke + i)->x += pomakX;
+
+//       // srand((unsigned int)seed);
+//       pomakY = rand() % (10 - 0 + 1) + 0;
+//       *(tocke + i)->y += pomakY;
+//    }
+
+//    return;
+// }
+
+// int main(void)
+// {
+//    int seed, brojKoraka;
+
+//    seed = 500;
+//    brojKoraka = 2;
+
+//    struct tocka_s tocke[brojKoraka];
+
+//    put(seed, brojKoraka, &tocke[0]);
+
+//    for (int i = 0; i < brojKoraka; i++)
+//    {
+//       printf("%d %d", tocke[i].x, tocke[i].y);
+//    }
+
+//    return 0;
+// }

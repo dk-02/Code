@@ -110,3 +110,47 @@
 
 // Napisati odsječak programa koji, korištenjem petlje s ispitivanjem uvjeta na kraju, obavlja potpuno istu funkciju kao odsječak programa prikazan dijagramom toka.
 // Nije dozvoljeno korištenje pomoćnih varijabli.
+
+
+// _Bool setQuadrants(char *fileName)
+// {
+//    _Bool uspjesno = 0;
+//    FILE *ulaz = fopen("points.bin", "r+b");
+
+//    struct record_s tocka;
+
+//    while (fread(&tocka, sizeof(tocka), 1, ulaz) == 1)
+//    {
+//       if (tocka.x > 0 && tocka.y > 0)
+//       {
+//          tocka.quadrant = 1;
+//          fseek(ulaz, -1L * sizeof(tocka), SEEK_CUR);
+//          fwrite(&tocka, sizeof(tocka), 1, ulaz);
+//       }
+//       else if (tocka.x < 0 && tocka.y > 0)
+//       {
+//          tocka.quadrant = 2;
+//          fseek(ulaz, -1L * sizeof(tocka), SEEK_CUR);
+//          fwrite(&tocka, sizeof(tocka), 1, ulaz);
+//       }
+//       else if (tocka.x < 0 && tocka.y < 0)
+//       {
+//          tocka.quadrant = 3;
+//          fseek(ulaz, -1L * sizeof(tocka), SEEK_CUR);
+//          fwrite(&tocka, sizeof(tocka), 1, ulaz);
+//       }
+//       else if (tocka.x > 0 && tocka.y > 0)
+//       {
+//          tocka.quadrant = 4;
+//          fseek(ulaz, -1L * sizeof(tocka), SEEK_CUR);
+//          fwrite(&tocka, sizeof(tocka), 1, ulaz);
+//       }
+      
+//       uspjesno = 1;
+//    }
+//    fflush(ulaz);
+
+//    fclose(ulaz);
+
+//    return uspjesno;
+// }
